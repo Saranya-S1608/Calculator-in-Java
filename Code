@@ -1,0 +1,106 @@
+import java.util.*;
+import java.lang.Math;
+public class Main
+{
+  public static void main (String args[])
+  {
+	System.out.println
+	  ("........................CALCULATOR............................");
+	System.out.println ("1.Addition");
+	System.out.println ("2.Subtraction");
+	System.out.println ("3.Multiplication");
+	System.out.println ("4.Division");
+	System.out.println ("5.Modulus");
+	System.out.println ("6.Square root");
+	System.out.println ("7.Cube root");
+	System.out.println ("8.Power");
+	System.out.println ("Choose your option: ");
+	calc ();
+  }
+  public static void calc ()
+  {
+	Scanner sc = new Scanner (System.in);
+	int c = sc.nextInt ();
+	switch (c)
+	  {
+	  case 1:
+		System.out.println ("Enter first number:");
+		int a = sc.nextInt ();
+		System.out.println ("Enter second number:");
+		int b = sc.nextInt ();
+		System.out.println ("Addition of two numbers: " + (a + b));
+		break;
+
+	  case 2:
+		System.out.println ("Enter first number:");
+		int x = sc.nextInt ();
+		System.out.println ("Enter second number:");
+		int d = sc.nextInt ();
+		System.out.println ("Subtraction of two numbers: " + (x - d));
+		break;
+
+	  case 3:
+		System.out.println ("Enter first number:");
+		int e = sc.nextInt ();
+		System.out.println ("Enter second number:");
+		int f = sc.nextInt ();
+		System.out.println ("Multiplication of two numbers: " + (e * f));
+		break;
+
+	  case 4:
+		System.out.println ("Enter first number:");
+		int g = sc.nextInt ();
+		System.out.println ("Enter second number:");
+		int h = sc.nextInt ();
+		System.out.println ("Division of two numbers: " + (g / h));
+		break;
+
+	  case 5:
+		System.out.println ("Enter first number:");
+		int i = sc.nextInt ();
+		System.out.println ("Enter second number:");
+		int j = sc.nextInt ();
+		System.out.println ("Modulus of two numbers: " + (i % j));
+		break;
+
+	  case 6:
+		System.out.println ("Enter a number:");
+		int k = sc.nextInt ();
+		System.out.println ("Square root of a given number is : " +
+							(Math.sqrt (k)));
+		break;
+
+	  case 7:
+		System.out.println ("Enter a number:");
+		int l = sc.nextInt ();
+		System.out.println ("Cube root of a given number is : " +
+							(Math.cbrt (l)));
+		break;
+
+	  case 8:
+		System.out.println ("Enter first number:");
+		int v = sc.nextInt ();
+		System.out.println ("Enter second number:");
+		int u = sc.nextInt ();
+		System.out.println ("Power of a number: " + (Math.pow (v, u)));
+		break;
+
+	  default:
+		System.out.println ("Enter a valid choice");
+	  }
+	System.out.println ();
+	System.out.println ();
+	System.out.println ();
+	System.out.println ("1.Next Operation");
+	System.out.println ("2.Exit");
+
+	System.out.println ();
+	System.out.println ();
+	System.out.println ("Choose 1 or 2: ");
+	int y = sc.nextInt ();
+	if (y == 1)
+	  main (null);
+	if (y == 2)
+	  System.out.println ("......................Thank you.......................");
+  }
+}
